@@ -1,0 +1,121 @@
+{
+	"Caption": "$(L,Risks_Detail)",
+	"DesignTimeTarget": {
+		"Service": "/riskmobileapp/Services/riskmanagement1Service.service",
+		"EntitySet": "Risks",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/riskmobileapp/Rules/riskmanagement1Service/Risks/NavToRisks_Edit.js",
+				"Position": "Right",
+				"SystemItem": "Edit"
+			},
+			{
+				"OnPress": "/riskmobileapp/Actions/riskmanagement1Service/Risks/Risks_DetailPopover.action",
+				"Position": "Right",
+				"Caption": "More"
+			}
+		]
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{title}",
+						"Subhead": "{Prio}",
+						"BodyText": "",
+						"Footnote": "{impact}",
+						"Description": "{descr}",
+						"StatusText": "{criticality}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{Bussiness_Supplier_BusinessPartner}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "title",
+							"Value": "{title}"
+						},
+						{
+							"KeyName": "Prio",
+							"Value": "{Prio}"
+						},
+						{
+							"KeyName": "descr",
+							"Value": "{descr}"
+						},
+						{
+							"KeyName": "impact",
+							"Value": "{impact}"
+						},
+						{
+							"KeyName": "criticality",
+							"Value": "{criticality}"
+						},
+						{
+							"KeyName": "Bussiness_Supplier_BusinessPartner",
+							"Value": "{Bussiness_Supplier_BusinessPartner}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				},
+				{
+					"Header": {
+						"Caption": "mitigations",
+						"_Type": "SectionCommon.Type.Header"
+					},
+					"ObjectCell": {
+						"AccessoryType": "DisclosureIndicator",
+						"Description": "{createdBy}",
+						"AvatarStack": {
+							"Avatars": [
+								{
+									"Image": ""
+								}
+							],
+							"ImageIsCircular": false
+						},
+						"Icons": [],
+						"StatusImage": "",
+						"Title": "{ID}",
+						"Footnote": "{description}",
+						"PreserveIconStackSpacing": false,
+						"StatusText": "{owner}",
+						"Subhead": "{createdAt}",
+						"SubstatusText": "{timeline}",
+						"OnPress": "/riskmobileapp/Actions/riskmanagement1Service/Mitigations/NavToMitigations_Detail.action"
+					},
+					"EmptySection": {
+						"Caption": "No record found!"
+					},
+					"Target": {
+						"EntitySet": "{@odata.readLink}/mitigations",
+						"Service": "/riskmobileapp/Services/riskmanagement1Service.service"
+					},
+					"_Type": "Section.Type.ObjectTable"
+				}
+			],
+			"DataSubscriptions": [
+				"Mitigations"
+			],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Risks_Detail",
+	"PrefersLargeCaption": true
+}

@@ -1,0 +1,9 @@
+{
+    "Service": "/riskmobileapp/Services/riskmanagement1Service.service",
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "OnFailure": "/riskmobileapp/Actions/riskmanagement1Service/Service/InitializeOnlineFailureMessage.action",
+    "ActionResult": {
+        "_Name": "init"
+    }
+}

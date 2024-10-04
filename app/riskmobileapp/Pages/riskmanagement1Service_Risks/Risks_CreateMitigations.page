@@ -1,0 +1,60 @@
+{
+	"ActionBar": {
+		"Items": [
+			{
+				"OnPress": "/riskmobileapp/Actions/CloseModalPage_Cancel.action",
+				"Position": "Left",
+				"SystemItem": "Cancel"
+			},
+			{
+				"OnPress": "/riskmobileapp/Rules/riskmanagement1Service/Risks/Risks_CreateMitigations.js",
+				"Position": "Right",
+				"SystemItem": "Save"
+			}
+		]
+	},
+	"Caption": "$(L,Create_Mitigations)",
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"_Type": "Section.Type.FormCell",
+					"_Name": "SectionFormCell0",
+					"Visible": true,
+					"Controls": [
+						{
+							"Caption": "createdAt",
+							"_Name": "createdAt",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "createdBy",
+							"_Name": "createdBy",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "description",
+							"_Name": "description",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "owner",
+							"_Name": "owner",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						},
+						{
+							"Caption": "timeline",
+							"_Name": "timeline",
+							"_Type": "Control.Type.FormCell.SimpleProperty"
+						}
+					]
+				}
+			],
+			"_Name": "SectionedTable0",
+			"_Type": "Control.Type.SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "Risks_CreateMitigations",
+	"PrefersLargeCaption": true
+}

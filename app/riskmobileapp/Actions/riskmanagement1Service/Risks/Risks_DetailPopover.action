@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add Mitigations",
+            "OnPress": "/riskmobileapp/Rules/riskmanagement1Service/Risks/NavToRisks_CreateMitigations.js"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/riskmobileapp/Rules/riskmanagement1Service/Risks/Risks_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

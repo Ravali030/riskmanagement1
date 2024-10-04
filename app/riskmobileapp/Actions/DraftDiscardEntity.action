@@ -1,0 +1,19 @@
+{
+    "_Type": "Action.Type.ODataService.DraftEnabled.Discard",
+    "Target": {
+        "Service": "/riskmobileapp/Services/riskmanagement1Service.service",
+        "EntitySet": "Mitigations",
+        "ReadLink": "{@odata.readLink}"
+    },
+    "ShowActivityIndicator": true,
+    "ActionResult": {
+        "_Name": "update"
+    },
+    "OnSuccess": {
+        "Name": "/riskmobileapp/Actions/UpdateEntitySuccessMessage.action",
+        "Properties": {
+            "Message": "Draft Discarded"
+        }
+    },
+    "OnFailure": "/riskmobileapp/Actions/UpdateEntityFailureMessage.action"
+}
